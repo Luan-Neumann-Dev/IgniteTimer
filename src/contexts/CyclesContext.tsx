@@ -73,7 +73,7 @@ export function CyclesContextProvider({ children }: CyclesContextProviderProps) 
         setCycles(state =>
             state.map((cycle) => {
                 if (cycle.id === activeCycleId) {
-                    return { ...cycle, interruptedData: new Date() }
+                    return { ...cycle, interruptedDate: new Date() }
                 } else {
                     return cycle;
                 }
